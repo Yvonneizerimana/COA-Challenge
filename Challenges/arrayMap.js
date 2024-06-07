@@ -1,16 +1,16 @@
 let contigousSubArrayWithinTheSum=(array,target)=>{
-        let sum=0;
+        let currentSum=0;
         let start=0;
 
         for (let i=0; i<array.length; i++){
-            sum+=array[i];
+            currentSum+=array[i];
         
-            while(sum>target && start<=i){
-                sum-=array[start];
+            while(currentSum>target && start<=i){
+                currentSum-=array[start];
                 start++;
 
             }
-            if(sum===target){
+            if(currentSum===target){
                 return true
             }
             
