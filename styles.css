@@ -38,7 +38,7 @@ body {
     bottom: -50px; /* Start below the image */
     left: 0;
     right: 0;
-    height: 60px;
+    height: 50px;
     opacity: 0;
     transition: bottom 0.5s ease, opacity 0.5s ease; /* Smooth transition for bottom and opacity */
     background-color: rgba(0, 0, 0, 0.5);
@@ -87,14 +87,12 @@ body {
 
 /* Responsive styling */
 @media (max-width: 768px) {
-    .gallery {
-        flex-direction: column;
-        align-items: center;
+    .description {
+        display: none;
     }
-
-    .image-container {
-        flex: 0 1 calc(50% - 20px); /* Set each image container to occupy 50% width with gap subtracted */
-        max-width: calc(50% - 20px); /* Set max-width for image container */
+    
+    body {
+        padding: 0;
+        margin: 0;
     }
 }
-
