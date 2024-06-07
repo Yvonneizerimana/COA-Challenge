@@ -87,12 +87,14 @@ body {
 
 /* Responsive styling */
 @media (max-width: 768px) {
-    .description {
-        display: none;
+    .gallery {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    body {
-        padding: 0;
-        margin: 0;
+
+    .image-container {
+        flex: 0 1 calc(50% - 20px); /* Set each image container to occupy 50% width with gap subtracted */
+        max-width: calc(50% - 20px); /* Set max-width for image container */
     }
 }
+
