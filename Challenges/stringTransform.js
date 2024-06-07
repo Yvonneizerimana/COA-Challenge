@@ -14,7 +14,7 @@ var transformString=(input) =>{
 // Check if the length of the input string is divisible by both 3 and 5
     if (input.length % 3 === 0 && input.length % 5 === 0) {
         // Reverse the entire string and replace each character with its ASCII code
-        output = input.split('').reverse().map(char => char.charCodeAt(0)).join(' ');
+        output = input.split('').reverse().map(char => char.charCodeAt(0)).join('');
     }
 
     // Return the transformed string or the original input string if no transformation is applied
